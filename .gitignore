@@ -1,2 +1,12 @@
 Frontend/ProductivNG/.editorconfig
 Frontend/ProductivNG/src/app/app.component.spec.ts
+.vs/*
+.vscode/*
+
+Backend/bin/*
+Backend/obj/*
+
+Backend/Backend.csproj.user
+Backend/obj/Debug/*
+Backend/obj/Debug/net8.0/Backend.AssemblyInfo.cs
+Backend/obj/Debug/net8.0/Backend.AssemblyInfoInputs.cache
