@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GoalsComponent } from './Components/goals/goal.component';
 import { HttpClientModule } from '@angular/common/http';
+import { GoalsDisplayComponent } from './Components/goals-display/goals-display.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    GoalsComponent
+    GoalsComponent,
+    GoalsDisplayComponent
   ],
   imports: [
     BrowserModule,
