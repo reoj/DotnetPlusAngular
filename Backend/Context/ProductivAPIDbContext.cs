@@ -21,9 +21,9 @@ public class ProductivAPIDbContext : DbContext
 
     private static void SeedGoalsData(ModelBuilder modelBuilder)
     {
-        var FirstGoalId = Guid.NewGuid();
-        var FirstGoalTaskId = Guid.NewGuid();
-        var FirstTagId = Guid.NewGuid();
+        var FirstGoalId = Guid.Parse("e62ef138-3b54-478f-9b7d-f8fe366844c7");
+        var FirstGoalTaskId = Guid.Parse("54ef124d-7529-4bf4-83d4-968dc252cf1b");
+        var FirstTagId = Guid.Parse("8b26a8f3-9ab8-4301-82c7-5c213f704c8c");
 
         Goal goalData = new Goal
         {
@@ -54,9 +54,7 @@ public class ProductivAPIDbContext : DbContext
             Goal = goalData
         };
 
-        modelBuilder.Entity<Tag>().HasData(programmingTag);
-        modelBuilder.Entity<GoalTask>().HasData(taskItem);
-        modelBuilder.Entity<Goal>().HasData(goalData);
+        
     }
 
     private static void SetUpGoalTaskRelationship(ModelBuilder modelBuilder)
