@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GoalsComponent } from './Components/goals/goal.component';
 import { HttpClientModule } from '@angular/common/http';
 import { GoalsDisplayComponent } from './Components/goals-display/goals-display.component';
+import { AppCommonsModule } from './Modules/app-commons/app-commons.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { GoalsDisplayComponent } from './Components/goals-display/goals-display.
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    AppCommonsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
