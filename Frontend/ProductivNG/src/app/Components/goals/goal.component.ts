@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Goal } from 'src/app/Models/Goal';
 
 @Component({
   selector: 'app-goal',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./goal.component.css']
 })
 export class GoalsComponent {
-
+  @Input() goal: Goal = null!;
+  
 }
